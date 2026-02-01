@@ -15,7 +15,7 @@ Aplicación web creada con **HTML, CSS y JavaScript** que permite estimar el niv
 🔹 Sirve como herramienta práctica para el TFG  
 
 **Carpeta:** `/modulo1-web-madurez-digital/`  
-**Demo web (GitHub Pages):** *(añadir enlace cuando se active)*  
+**Demo web (GitHub Pages):** *(https://diegodm11.github.io/tfg-digitalizacion-ia/)*  
 
 ---
 
