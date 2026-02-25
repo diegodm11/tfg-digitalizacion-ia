@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modelo por Fases (RPA → IA → Data-driven)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Modelo por Fases: RPA → IA → Data-driven</h1>
 
+  <p>
+    Marca los indicadores que cumple tu empresa. El sistema calcula la fase (1–4),
+    muestra puntuación por bloques y genera una recomendación.
+  </p>
+
+  <div class="box">
+    <label for="tipo"><strong>Tipo de empresa:</strong></label>
+    <select id="tipo">
+      <option value="A">Tipo A (procesos digitales/administrativos)</option>
+      <option value="B">Tipo B (operaciones/procesos físicos)</option>
+    </select>
+  </div>
+
+  <h2>Fase 1 — Digitalización básica</h2>
+  <label><input type="checkbox" id="D1"> D1. Tiene web/canal digital propio</label><br>
+  <label><input type="checkbox" id="D2"> D2. Gestiona datos en digital (no papel)</label><br>
+  <label><input type="checkbox" id="D3"> D3. Almacenamiento centralizado + copias</label><br>
+  <label><input type="checkbox" id="D4"> D4. Usa herramientas de gestión (ERP/CRM/facturación)</label><br>
+
+  <h2>Fase 2 — Automatización (RPA)</h2>
+  <label><input type="checkbox" id="A1"> A1. Ha identificado tareas repetitivas</label><br>
+  <label><input type="checkbox" id="A2"> A2. Procesos documentados/estandarizados</label><br>
+  <label><input type="checkbox" id="A3"> A3. Usa automatizaciones (macros/scripts/RPA)</label><br>
+  <label><input type="checkbox" id="A4"> A4. Trazabilidad/registro en procesos clave</label><br>
+
+  <h2>Fase 3 — Automatización inteligente (RPA + IA)</h2>
+  <label><input type="checkbox" id="I1"> I1. Usa OCR en documentos</label><br>
+  <label><input type="checkbox" id="I2"> I2. Usa lenguaje (chatbot/NLP/clasificación de emails)</label><br>
+  <label><input type="checkbox" id="I3"> I3. Clasificación/priorización inteligente</label><br>
+  <label><input type="checkbox" id="I4"> I4. Datos con calidad mínima o proceso de limpieza</label><br>
+
+  <h2>Fase 4 — Empresa data-driven</h2>
+  <label><input type="checkbox" id="DD1"> DD1. KPIs definidos y revisados</label><br>
+  <label><input type="checkbox" id="DD2"> DD2. Cuadros de mando / reporting</label><br>
+  <label><input type="checkbox" id="DD3"> DD3. Predicción/previsiones (aunque básico)</label><br>
+  <label><input type="checkbox" id="DD4"> DD4. Mejora continua basada en datos</label><br>
+
+  <button type="button" id="btnCalcular">Calcular resultado</button>
+
+  <div class="result">
+    <h2>Resultado</h2>
+    <p id="faseFinal">—</p>
+    <p id="puntuaciones">—</p>
+    <p id="recomendacion">—</p>
+  </div>
+
+  <script src="modelo-fases.js"></script>
+</body>
+</html>
